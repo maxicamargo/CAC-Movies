@@ -1,0 +1,84 @@
+:root {
+    --bgprimary: #9f3647;
+    --bgsecundary: rgb(42, 42, 42);
+    --textcolor: #ffffff;
+  }
+
+.registro{
+    background-image: url(../img/bg-register.jpg);
+    background-size: contain;
+    background-repeat: repeat-x;
+
+    padding: 3rem;
+
+    .container{
+        width: 60%;
+        background-color: var(--bgsecundary);
+        border-radius: 0.7rem;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+
+        h3{
+            color: var(--textcolor);
+            margin-top: 2rem;
+            font-size: 1.5rem;
+            font-weight: 600;
+            font-family: "Nunito", sans-serif;
+        }
+
+        form{
+            display: flex;
+            flex-direction: column;
+            gap: 1 rem;
+
+            input, select{
+                background-color: #333333;
+                width: 15rem;
+                height: 2rem;
+                border-radius: 0.7rem;
+                border: 2px solid #9f3647;
+                padding-left: 0.5rem;
+                margin: 1rem auto;
+                color:rgb(255, 255, 255);
+            }
+
+            label{
+                display: flex;
+                flex-direction: row;
+                text-align: center;
+                align-items: center;
+                color: #ffffff;
+            }
+
+            #check{
+                width: 15px;
+                height: 15px;
+            }
+
+
+            
+
+            .ingresar{
+                width: 13rem;
+                height: 2.5rem;
+                border-radius: 0.4rem;
+                background-color: #9F3647;
+                color: rgb(255, 255, 255);
+                
+            }
+
+        }
+
+        a{
+            text-decoration: none;
+            color: #787878;
+            padding-bottom: 2rem;
+        }
+    }
+
+
+}

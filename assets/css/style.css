@@ -1,0 +1,49 @@
+
+/*Definimos los parametros generales*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/*Definimos las variables a utilizar en nuestro proyecto*/
+:root{
+    --bgprimary: rgb(151,26,26);
+    --bgsecondary: rgb(26,24,24);
+    --textcolor: rgb(255,255,255);
+}
+
+
+a{
+    text-decoration: none;
+    color: var(--textcolor);
+}
+
+
+body{
+    header{
+        background-color: var(--bgprimary);
+        color: var(--textcolor);
+        height: 10vh;
+
+        nav{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 0 4rem;
+        }
+
+        .logo{
+            height: 50%;
+            display: flex;
+            align-items: center;
+            
+            svg{
+                height: 2rem;
+                width: auto;
+            }
+        }
+    }
+}
+
