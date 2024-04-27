@@ -14,7 +14,7 @@
     --bgprimary: #9f3647;
     --bgsecondary: #2a2a2a;
     --textprimary: #ffffff;
-    --textsecondary: rgb(0, 0, 0);
+    --textsecondary: #787878;
     --btnsecondary: #181419;
 }
 
@@ -47,6 +47,8 @@ li{
 
 
 body{
+    background-color: var(--btnsecondary);
+
     header{    
         nav{
             background-color: var(--bgprimary);
@@ -170,6 +172,60 @@ body{
             }
         }
 
+        .busqueda{
+            .contenedor{
+                width: 75vw;
+                height: 50vh;
+                margin: 1rem auto;
+                border-bottom:0.2rem solid var(--bgprimary);
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 2rem;
+
+                h2{
+                    font-weight: 600;
+                    font-size: 2.3rem;
+                }
+
+                form{
+                    width: 100%;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    gap: 1rem;
+
+
+                    input{
+                        border-radius: 1.5rem;
+                        border-style: none;
+                        padding: 0.7rem 1rem 0.7rem 1.2rem;
+                    }
+
+                    .textoBuscar{
+                        width: 60%;    
+                    }
+
+                    .botonBuscar{
+                        width: 110px;
+                        background-color: var(--bgprimary);
+                        border: 2px solid var(--textprimary);
+                        color: var(--textprimary);
+                    }
+
+                    .botonBuscar:hover{
+                        transform: scale(0.9);
+                        transition-duration: 0.4s;
+                        box-shadow: 0 0 0.4rem var(--textprimary);
+                    }
+                }
+
+
+            }
+        }
+
+     
     }
 
 }
