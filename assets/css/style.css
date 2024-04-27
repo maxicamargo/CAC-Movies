@@ -4,46 +4,127 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Nunito", sans-serif;
+    font-size: 18px;
+    background: var(--bgsecondary);
 }
 
 
 /*Definimos las variables a utilizar en nuestro proyecto*/
 :root{
-    --bgprimary: rgb(151,26,26);
-    --bgsecondary: rgb(26,24,24);
-    --textcolor: rgb(255,255,255);
+    --bgprimary: #9f3647;
+    --bgsecondary: #2a2a2a;
+    --textprimary: #ffffff;
+    --textsecondary: orange;
+    --btnsecondary: #181419;
 }
 
+@keyframes logo{
+    0%{
+        transform: translate(0px,0px) scale(0.9) rotate(0deg);
+    }
+    25%{
+        transform: translate(-2px,2px) scale(0.7) rotate(10deg);
+    }
+    50%{
+        transform: translate(-4px,4px) scale(1) rotate(0deg);
+    }
+    75%{
+        transform: translate(0px,0px) scale(0.9) rotate(-10deg);
+    }
+    100%{
+        transform: translate(4px,-4px) scale(0.8) rotate(0deg);    
+    }
+}
 
 a{
     text-decoration: none;
-    color: var(--textcolor);
+    color: var(--textprimary); 
+}
+
+li{
+    list-style-type: none;
 }
 
 
 body{
-    header{
-        background-color: var(--bgprimary);
-        color: var(--textcolor);
-        height: 10vh;
-
+    header{    
         nav{
+            background-color: var(--bgprimary);
+            height: 10vh;
             display: flex;
+            flex-direction: row;
             justify-content: space-between;
             align-items: center;
-            margin: 0 4rem;
+            padding: 0 2rem;
+
+            .logo{
+                background-color: var(--bgprimary);
+
+                i, span{
+                    background-color: var(--bgprimary);
+                }
+
+                span{
+                    font-size: 1.2rem;
+                    font-weight: bold;
+                }
+            }
+
+            .logo:hover{
+                animation-name: logo;
+                animation-duration: 1s;
+                animation-timing-function: linear;
+                animation-iteration-count: infinite;
+            }
+
+            ul{
+                background-color: var(--bgprimary);
+                display: flex;
+                flex-direction: row;
+                gap: 0.5rem;
+
+                li{
+                    background-color: var(--bgprimary);
+                    width: 7rem;
+                    height: 2rem;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 0.3rem;
+
+                    a{
+                        background-color: var(--bgprimary);
+                        font-weight: bold;                   
+                    }
+                }
+
+                li:hover{
+                    box-shadow: 0 0 0.3rem var(--bgsecondary);
+                }   
+
+                li:last-child{
+                    background-color: var(--btnsecondary);
+                    
+                    a{
+                        background-color: var(--btnsecondary); 
+                    }
+                }
+
+                li:last-child:hover{
+                    background-color: var(--bgprimary);
+                    a{
+                        background-color: var(--bgprimary);
+                    }
+                }
+         
+            }
+
         }
 
-        .logo{
-            height: 50%;
-            display: flex;
-            align-items: center;
-            
-            svg{
-                height: 2rem;
-                width: auto;
-            }
-        }
     }
+
 }
+
+
 
