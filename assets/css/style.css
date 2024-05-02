@@ -138,7 +138,7 @@ body{
             color: var(--textprimary);
             font-size: 2.5rem;
             font-weight: 600;
-
+            margin: 2rem auto;
         }
 
         h3{
@@ -146,6 +146,10 @@ body{
             font-size: 2rem;
             font-weight: normal;
         }
+
+
+
+
 
         .principal{
             height: 90vh;
@@ -227,15 +231,17 @@ body{
         }
 
         .tendencias{
+            width: 75vw;
             text-align: center;
             margin: 1rem auto;
-            padding: 0 2rem;
+            padding: 0 1rem;
+            border-bottom:0.2rem solid var(--bgprimary);
 
             h2{
                 margin: 2rem auto;
             }
 
-            .contenedorPeliculas{
+            .contenedorTendencias{
                 display: grid;
                 grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
                 justify-items: center;
@@ -258,11 +264,93 @@ body{
 
             }
 
+            form{
+                margin: 2.5rem auto;
+
+                input{
+                    padding: 0.7rem 1rem;
+                    background-color: var(--bgprimary);
+                    border-style: none;
+                    border-radius: 0.3rem;
+                    border: 0.1rem solid var(--textprimary);
+                    color: var(--textprimary);
+                    margin-left: 1rem;
+                }
+
+                input:hover{
+                    transform: scale(0.9);
+                    transition-duration: 0.4s;
+                    box-shadow: 0 0 0.4rem var(--textprimary);
+                }
+            }
+
+        }
+
+        .aclamadas{
+            width: 75vw;
+            text-align: center;
+            margin: 1rem auto;
+            padding: 0 1rem;
+            margin-bottom: 3rem;
+
+            h2{
+
+            }
+
+            .contenedorAclamadas{
+                overflow-x: scroll;
+                overflow-y: hidden;
+                display: flex;
+                flex-direction: row; 
+                justify-content: flex-start;
+                align-items: flex-start;
+                gap: 2.5rem;
+                /*scrollbar-color: var(--bgprimary) var(--btnsecondary);*/
+            
+
+                .imagenAclamadas{
+                    margin-bottom: 3rem;
+
+                    img{
+                        width: 9rem;
+                        border-radius: 0.5rem;
+                    }
+
+                }
+
+
+            }
+
+            .contenedorAclamadas::-webkit-scrollbar{
+                height: 1rem;
+            }
+
+            .contenedorAclamadas::-webkit-scrollbar-track{
+                background:var(--btnsecondary);
+            }
+
+            .contenedorAclamadas::-webkit-scrollbar-thumb{
+                background:var(--bgprimary);
+            }
+
+
         }
 
      
     }
 
+}
+
+body::-webkit-scrollbar{
+    width: 0.8rem;
+}
+
+body::-webkit-scrollbar-track{
+    background:var(--btnsecondary);
+}
+
+body::-webkit-scrollbar-thumb{
+    background:var(--bgprimary);
 }
 
 
