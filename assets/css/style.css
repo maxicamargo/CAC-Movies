@@ -259,6 +259,7 @@ body{
     
                     img:hover{
                         filter:blur(10px);
+
                     }
                 }
 
@@ -304,9 +305,7 @@ body{
                 flex-direction: row; 
                 justify-content: flex-start;
                 align-items: flex-start;
-                gap: 2.5rem;
-                /*scrollbar-color: var(--bgprimary) var(--btnsecondary);*/
-            
+                gap: 2.5rem;         
 
                 .imagenAclamadas{
                     margin-bottom: 3rem;
@@ -337,6 +336,41 @@ body{
         }
 
      
+    }
+
+    footer{
+        background-color: var(--bgprimary);
+        height: 15vh;
+        padding: 1rem;
+
+
+        ul{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 2rem;
+
+            li{
+                color: var(--textprimary);
+                font-weight: bold;
+            }
+
+            li:last-child{
+                background: var(--btnsecondary);
+                padding: 0.5rem;
+                border-radius: 0.5rem;
+            }
+
+        }
+
+        .btnFlecha{
+            position:fixed;
+            bottom: 1rem;
+            right: 1rem;
+
+        }
+
     }
 
 }
