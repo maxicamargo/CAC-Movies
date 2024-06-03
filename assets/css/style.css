@@ -49,10 +49,13 @@ li{
 body{
     background-color: var(--btnsecondary);
 
-    header{    
+    header{
+        position: fixed;
+        width: 100vw;       
+
         nav{
             background-color: var(--bgprimary);
-            height: 10vh;
+            height: 12vh;
             display: flex;
             flex-direction: row;
             justify-content: space-between;
@@ -130,8 +133,8 @@ body{
         h1{
             color: var(--textprimary);
             font-size: 3.5rem;
-            font-weight: 700;   
-    
+            font-weight: 700;
+            padding-top: 2rem;
         }
 
         h2{
@@ -147,13 +150,10 @@ body{
             font-weight: normal;
         }
 
-
-
-
-
         .principal{
-            height: 90vh;
+            height: 100vh;
             padding: 4rem;
+            padding-top: 6rem;
             background-image: url(../img/banner-bg.jpg);
             background-position: center;
             background-repeat: no-repeat;
@@ -248,13 +248,19 @@ body{
                 gap: 2rem;
 
                .imagenTenedencias{
+
                     span{
-                        display: none;
+                      position: relative;
+                      top: 50%;
+                      color: var(--textprimary);
+                      font-weight: bold;
+                      display: none;
                     }
                     
                     img{
                         width: 10rem;
                         border-radius: 1rem;
+                        
                     }
     
                     img:hover{
