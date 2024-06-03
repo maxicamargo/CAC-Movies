@@ -59,7 +59,10 @@
                 height: 15px;
             }
 
-
+            span{
+                color: var(--bgprimary);
+                font-size: 1rem;
+            }
             
 
             .ingresar{
