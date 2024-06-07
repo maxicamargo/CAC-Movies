@@ -54,6 +54,12 @@ function validar(formulario){
         return false;
     }
     
+    if(formulario.date.value == 0){
+        document.getElementById("errorDate").innerText="Debe seleccionar su fecha de nacimiento";
+        formulario.date.focus();
+        return false;
+    }
+
     if(formulario.pais.value == ""){
         document.getElementById("errorPais").innerText = "Debe seleccionar un pais";
         formulario.pais.focus();
